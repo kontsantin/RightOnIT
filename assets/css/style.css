@@ -1164,9 +1164,23 @@ section, footer {
   background-color: #ddd;
 }
 
+.archive-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(85, 163, 0, 0.45) 10%, rgba(137, 24, 136, 0.4) 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
+  filter: blur(50px);
+  z-index: -1;
+}
+
 /* Хлебные крошки */
 .breadcrumbs {
-  margin-bottom: 20px;
+  margin: 60px 0;
 }
 .breadcrumbs__list {
   display: flex;
@@ -1184,13 +1198,15 @@ section, footer {
 }
 .breadcrumbs__link {
   text-decoration: none;
-  color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
 }
 .breadcrumbs__link:hover {
   text-decoration: underline;
 }
 .breadcrumbs__current {
   color: #666;
+  text-transform: uppercase;
 }
 
 /* Табы */
@@ -1200,31 +1216,70 @@ section, footer {
   margin-bottom: 20px;
 }
 .tabs__button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #f0f0f0;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding: 13px 24px;
+  background-color: #C6F906;
+  width: 100%;
+  color: #000000;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border-color 0.5s ease;
+  z-index: 0;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-.tabs__button--active {
-  background-color: #007bff;
-  color: white;
+  min-width: max-content;
+  width: fit-content;
 }
 .tabs__button:hover {
-  background-color: #ddd;
+  border-color: #000;
+  transition: color 1s ease;
+  color: #fff;
+}
+.tabs__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  background-color: #000;
+  transition: left 1s ease;
+  z-index: -1;
+}
+.tabs__button:hover::before {
+  left: 0; /* Выезжает на весь элемент */
 }
 
 /* Заголовок категории */
 .category-heading {
-  margin-bottom: 20px;
+  margin: 60px 0;
 }
 .category-heading__title {
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin: 70px 0;
+  background: linear-gradient(90deg, #00ff00, #b71cff, #edff4e);
+  font-size: clamp(2.5rem, 1.82rem + 3.02vw, 4.313rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  background-size: 200% 200%;
+  color: rgba(255, 255, 255, 0.2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: wave 5s infinite linear;
+  font-size: 100px;
 }
 .category-heading__desc {
-  font-size: 16px;
-  color: #666;
+  font-size: clamp(1.375rem, 1.07rem + 1.35vw, 2.188rem);
+  color: #fff;
+}
+.category-heading__desc p {
+  font-size: 25px;
 }
 
 /* Сетка карточек */

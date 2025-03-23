@@ -1247,11 +1247,28 @@ section, footer {
     }
   }
 }
+.archive-top {
 
+     &::before {
+
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 800px;
+             height: 800px;
+             background: radial-gradient(circle, rgb(85 163 0 / 45%) 10%, #89188866 70%);
+             border-radius: 50%;
+             box-shadow: 0 0 50px rgb(255 255 255 / 25%);
+             filter: blur(50px);
+             z-index: -1;
+
+     }
+}
 
 /* Хлебные крошки */
 .breadcrumbs {
-  margin-bottom: 20px;
+  margin: 60px 0;
 
   &__list {
     display: flex;
@@ -1272,8 +1289,8 @@ section, footer {
 
   &__link {
     text-decoration: none;
-    color: #007bff;
-
+    color: $color-white;
+    text-transform: uppercase;
     &:hover {
       text-decoration: underline;
     }
@@ -1281,6 +1298,7 @@ section, footer {
 
   &__current {
     color: #666;
+      text-transform: uppercase;
   }
 }
 
@@ -1291,35 +1309,28 @@ section, footer {
   margin-bottom: 20px;
 
   &__button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-
-    &--active {
-      background-color: #007bff;
-      color: white;
-    }
-
-    &:hover {
-      background-color: #ddd;
-    }
+      @include btn-style;
+      width: fit-content;
   }
 }
 
 /* Заголовок категории */
 .category-heading {
-  margin-bottom: 20px;
+  margin: 60px 0;
 
   &__title {
-    font-size: 24px;
-    margin-bottom: 10px;
+      margin: 70px 0;
+      background: linear-gradient(90deg, #00ff00, #b71cff, #edff4e);
+      @include title-style-h2;
+      font-size: 100px;
   }
 
   &__desc {
-    font-size: 16px;
-    color: #666;
+    font-size: $h3-font-size;
+    color: $color-white;
+      p {
+          font-size: $h4-font-size;
+      }
   }
 }
 
