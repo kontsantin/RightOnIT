@@ -35,7 +35,7 @@
                             <a href="/archive.html" class="header__nav-item-link">Services</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-item-link">Our Work</a>
+                            <a href="/single-project.html" class="header__nav-item-link">Our Work</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-item-link">About Us</a>
@@ -69,13 +69,26 @@
 <main class="main">
     <section class="archive-top">
     <div class="container">
-        <!-- Табы для категорий -->
-        <div class="tabs">
-            <button class="tabs__button tabs__button--active" data-category="all">Все</button>
-            <button class="tabs__button" data-category="category1">Категория 1</button>
-            <button class="tabs__button" data-category="category2">Категория 2</button>
-            <button class="tabs__button" data-category="category3">Категория 3</button>
+        <div class="archive-header">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">Web design</span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Табы для категорий -->
+            <div class="tabs">
+                <button class="tabs__button tabs__button--active" data-category="all">All</button>
+                <button class="tabs__button" data-category="category1">Web design</button>
+                <button class="tabs__button" data-category="category2">SEO Services</button>
+                <button class="tabs__button" data-category="category3">Pay Per Click, SMM, Marketing</button>
+            </div>
         </div>
+
 
         <!-- Заголовок и описание категории -->
         <div class="category-heading">
@@ -88,7 +101,70 @@
         </div>
     </div>
     </section>
-        <!-- Сетка карточек -->
+    <section class="stages" data-section="stages">
+
+        <div class="container">
+            <h2 class="stages__title">Stages develop</h2>
+            <div class="stages__row">
+                <!-- Left Column: Steps List -->
+                <div class="stages__left">
+                    <div class="stage" data-stage="1">
+                        <span class="stage__number">01</span>
+                        <h3 class="stage__title">Preparing Website for SEO</h3>
+                        <p class="stage__desc">At this stage our web specialist prepares to promote the website structure. This includes editing the template design, getting rid of trash in a html-code, setting up file indexing (robots.txt), increase download speed information. This is a basic foundation in seo-promotion but, oddly enough, many companies fail at this stage because of the low quality specialists.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="2">
+                        <span class="stage__number">02</span>
+                        <h3 class="stage__title">Keyword Research</h3>
+                        <p class="stage__desc">Preparation and selection of the right keywords that represent the theme of your website e-commerce store – Success SEO optimization. Of course without the kernel you can display the site in the top 10, but the flow of traffic in this case would still be significantly lower than the web resource, which has correctly formulated the semantic core.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="3">
+                        <span class="stage__number">03</span>
+                        <h3 class="stage__title">Internal Optimization</h3>
+                        <p class="stage__desc">After selecting the right kernel you must pay attention to the content writing using needed keywords. Writing good seo texts – one of the key objectives for high organic ranking, which is successfully used by many webmasters and owners of the resources, because you don’t need any technical knowledge and the network is full of information.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="4">
+                        <span class="stage__number">04</span>
+                        <h3 class="stage__title">Website Interlinking</h3>
+                        <p class="stage__desc">After filling the website with related content, you must do an internal linking between website posts and pages. Interlinking is the process of placing links leading from one article or page to another. When you do it right way search engines easily index the old and new documents. As a result – possibility of reaching better ranking results without significant cost. Many SEO companies delegate this phase to special plug-ins and extensions which often has a negative impact on the overall promotion and won’t give as good effect as if it is done manually.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="5">
+                        <span class="stage__number">05</span>
+                        <h3 class="stage__title">External (off-page) SEOg</h3>
+                        <p class="stage__desc">Another step of SEO is a purchase of third-party links for it. There also are special services and exchanges, where you can find those who is ready to host a link to a third-party site and those who can buy those links. The downside of this phase is it’s high cost and the need in knowledge finding worthy candidates for the reference donation.
+                            Anyways the best way is to do it manually – choosing right “donors” with high-quality content and high ranking.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="6">
+                        <span class="stage__number">06</span>
+                        <h3 class="stage__title">Ongoing Analysis</h3>
+                        <p class="stage__desc">Permanent – ongoing analysis – must be done after every SEO Step, some of them like internal links, new keywords can be reconsidered at any moment. You can always see what’s going on with help of Google Search Console, Google Analytics and etc. For external links checking and more deep analyse you can also use paid services, for example Ahrefs or MOZ
+                            Design Analytics – layout  AB testing for better user experience, and other features can be also very helpful.</p>
+                        <div class="stage__border"></div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Category Name (Parallax) -->
+                <div class="stages__right">
+                    <div class="stages__category" data-category=""></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2 class="projects__title">Our Projects</h2>
+
+            <a href="#" class="projects__link projects__link-all">More our jobs</a>
+
+        </div>
         <div class="projects__list">
             <div class="projects__item">
                 <div class="projects__container">
@@ -138,6 +214,59 @@
             </div>
         </div>
 
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="container feedback__container">
+            <div class="feedback__content-grid">
+                <div class="feedback__content-grid-column">
+
+                    <h2 class="feedback__title">Get in Touch</h2>
+                    <p class="feedback__subtitle">Our managers will promptly answer all your questions and help you find the best solution</p>
+                    <div class="feedback__text">
+                        <p>Submit your request, and we will call you back at a convenient time. Our team of experts will provide consultations on any matters, tailor partnership conditions to your needs, and offer the best options for your business or personal goals.</p>
+                        <p>We value every client and guarantee a professional approach, quick response, and flexible solutions. We work with both individuals and businesses, providing favorable terms and personalized service.</p>
+                    </div>
+                    <p class="feedback__note">*Response time may vary slightly during peak hours, but we always strive for maximum efficiency.</p>
+                </div>
+                <div class="feedback__content-grid-column">
+                    <form class="feedback__form" id="feedbackForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <label for="name" class="form-label">Your Name</label>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-textarea" rows="3"></textarea>
+                            <label for="message" class="form-label">Message (optional)</label>
+                        </div>
+
+                        <button type="submit" class="feedback__submit">
+                            <span>Submit</span>
+                            <svg class="submit-icon" viewBox="0 0 24 24">
+                                <path d="M4 12l16 0m-7-7l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="form-agreement">
+                            <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required checked>
+                            <label for="agreement">I agree with the <a href="/privacy">privacy policy</a></label>
+                        </div>
+                    </form>
+            </div>
+            </div>
+            <div class="feedback__decoration">
+                <div class="decoration-circle"></div>
+                <div class="decoration-dots"></div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
     <div class="footer__container container">
@@ -251,7 +380,7 @@
 </footer>
 <div class="modal">
     <div class="modal__content">
-        <button class="modal__close-btn" aria-label="Close Modal">X</button>
+        <button class="modal__close-btn" aria-label="Close Modal"></button>
         <h2 class="modal__title">Contact Us</h2>
         <form action="#" class="modal__form">
             <label for="name" class="modal__label">Your Name</label>

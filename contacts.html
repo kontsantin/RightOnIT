@@ -38,10 +38,10 @@
                             <a href="#" class="header__nav-item-link">Our Work</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="./about.html" class="header__nav-item-link">About Us</a>
+                            <a href="#" class="header__nav-item-link">About Us</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="./contacts.html" class="header__nav-item-link">Contact Us</a>
+                            <a href="#" class="header__nav-item-link">Contact Us</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-item-link">More Info</a>
@@ -66,165 +66,118 @@
     </div>
 </header>
 <main class="main">
-    <div class="single-project">
-        <section class="single-page-top">
+    <div class="single-page">
+        <section class="archive-top single-page-top">
             <div class="container">
-                <div class="single-page-header">
+                <div class="archive-header single-page-header">
                     <nav class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item">
                                 <a href="/" class="breadcrumbs__link">Home</a>
                             </li>
                             <li class="breadcrumbs__item">
-                                <a href="/portfolio" class="breadcrumbs__link">Portfolio</a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <span class="breadcrumbs__current">Vector Moving Company</span>
+                                <span class="breadcrumbs__current">Contact</span>
                             </li>
                         </ul>
                     </nav>
-                    <h1 class="project-title">Vector Moving Company Web Design</h1>
+                    <h1 class="page-title">Let's Build Something Great Together</h1>
+                    <p class="page-subtitle">Have a project in mind or questions about our services? We'd love to hear from you.</p>
                 </div>
             </div>
         </section>
 
-        <section class="project-hero">
+        <section class="contact-main">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h2>Transforming a local moving company's online presence</h2>
-                        <p>A complete redesign focused on usability, conversions, and modern aesthetics</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="./assets/images/vector-desc.png" alt="Vector Moving Company Website Preview" class="hero-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-overview">
-            <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-item">
-                        <h3>Client</h3>
-                        <p>Vector Moving Company - San Diego</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Services</h3>
-                        <p>Web Design, UX/UI, Frontend Development</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Timeline</h3>
-                        <p>6 weeks</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Technologies</h3>
-                        <p>HTML5, CSS3, JavaScript, WordPress</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-details">
-            <div class="container">
-                <div class="details-content">
-                    <h2 class="section-title">Project Details</h2>
-
-                    <div class="detail-block">
-                        <h3>The Challenge</h3>
-                        <p>Vector Moving Company approached us with an outdated HTML website that was poorly converting visitors into customers. The existing site had several pain points:</p>
-                        <ul>
-                            <li>Dated design that didn't reflect their professional services</li>
-                            <li>No mobile responsiveness</li>
-                            <li>Complex navigation structure</li>
-                            <li>No online booking or quote system</li>
-                            <li>Slow loading times</li>
-                        </ul>
-                    </div>
-
-                    <div class="detail-block">
-                        <h3>Our Solution</h3>
-                        <p>We completely reimagined their digital presence with a modern, conversion-focused design:</p>
-
-                        <div class="solution-features">
-                            <div class="feature">
-                                <h4>Custom Video Header</h4>
-                                <p>Created an engaging full-screen video background showing their team in action to immediately connect with visitors.</p>
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
-                            <div class="feature">
-                                <h4>Interactive Quote Calculator</h4>
-                                <p>Developed a dynamic form that provides instant moving estimates based on home size and services needed.</p>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
-                            <div class="feature">
-                                <h4>Service Showcase</h4>
-                                <p>Redesigned their service pages with clear icons, before/after sliders, and customer testimonials.</p>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (optional)</label>
+                                <input type="tel" id="phone" name="phone">
                             </div>
-                            <div class="feature">
-                                <h4>Mobile-First Approach</h4>
-                                <p>Ensured perfect display and functionality across all devices with responsive breakpoints.</p>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="web-design">Web Design</option>
+                                    <option value="redesign">Website Redesign</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Other Ways to Connect</h2>
+                        <div class="info-block">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:hello@yourstudio.com">hello@yourstudio.com</a></p>
                         </div>
-                    </div>
-
-                    <div class="detail-block">
-                        <h3>The Results</h3>
-                        <div class="results-stats">
-                            <div class="stat">
-                                <span class="stat-number">+75%</span>
-                                <span class="stat-label">Increase in quote requests</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">-40%</span>
-                                <span class="stat-label">Reduction in bounce rate</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">3.2x</span>
-                                <span class="stat-label">More mobile conversions</span>
-                            </div>
+                        <div class="info-block">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                            <p>Mon-Fri, 9am-5pm EST</p>
+                        </div>
+                        <div class="info-block">
+                            <h3>Visit Us</h3>
+                            <address>
+                                123 Design Street<br>
+                                Creative District<br>
+                                San Diego, CA 92101
+                            </address>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Dribbble</a>
+                            <a href="#" class="social-link">Instagram</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="project-gallery">
+        <section class="faq-section">
             <div class="container">
-                <h2 class="section-title">Design Showcase</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Homepage Design">
-                        <p>Homepage with video background</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What's your typical project timeline?</h3>
+                        <p>Most web design projects take 4-8 weeks from kickoff to launch, depending on complexity. We'll provide a detailed timeline after discussing your specific needs.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Quote Form">
-                        <p>Interactive quote calculator</p>
+                    <div class="faq-item">
+                        <h3>Do you work with clients remotely?</h3>
+                        <p>Yes! We regularly work with clients across North America and internationally. Our process is optimized for remote collaboration.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Mobile View">
-                        <p>Responsive mobile design</p>
+                    <div class="faq-item">
+                        <h3>What's included in your web design packages?</h3>
+                        <p>All our projects include strategy, design, development, testing, and launch support. We offer additional services like content creation and SEO.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Services Page">
-                        <p>Services overview page</p>
+                    <div class="faq-item">
+                        <h3>How do you handle website maintenance?</h3>
+                        <p>We offer flexible maintenance plans to keep your site updated, secure, and performing optimally after launch.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="project-testimonial">
+        <section class="map-section">
             <div class="container">
-                <blockquote>
-                    <p>"The new website has transformed our business. We're getting more qualified leads, and customers constantly compliment the easy-to-use quote system. The design perfectly represents our brand's professionalism."</p>
-                    <footer>- Michael T., Owner of Vector Moving Company</footer>
-                </blockquote>
-            </div>
-        </section>
-
-        <section class="project-cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Ready to transform your website?</h2>
-                    <a href="/contact" class="cta-button">Start Your Project</a>
+                <div class="map-container">
+                    <!-- Replace with your actual map embed code -->
+                    <img src="https://via.placeholder.com/1200x400" alt="Map to our office" class="map-image">
                 </div>
             </div>
         </section>

@@ -464,3 +464,250 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const stages = document.querySelectorAll('.stage');
+    const rightColumn = document.querySelector('.stages__right');
+
+    if (!stages.length || !rightColumn) return;
+
+    // Создаем элемент для отображения заголовка с параллаксом
+    const titleElement = document.createElement('div');
+    titleElement.className = 'stages__current-title';
+    rightColumn.appendChild(titleElement);
+
+
+
+
+    // Функция обновления активного stage
+    function updateActiveStage() {
+        const viewportCenter = window.scrollY + (window.innerHeight / 2);
+        let activeStage = null;
+
+        stages.forEach(stage => {
+            const rect = stage.getBoundingClientRect();
+            const stageTop = rect.top + window.scrollY;
+            const stageBottom = stageTop + rect.height;
+
+            if (viewportCenter >= stageTop && viewportCenter <= stageBottom) {
+                activeStage = stage;
+            }
+        });
+
+        stages.forEach(stage => stage.classList.remove('stage--active'));
+
+        if (activeStage) {
+            const title = activeStage.querySelector('.stage__title')?.textContent;
+            if (title) {
+                titleElement.textContent = title;
+                activeStage.classList.add('stage--active');
+
+                // Параллакс-эффект
+                const rect = activeStage.getBoundingClientRect();
+                const progress = (window.innerHeight/2 - rect.top) / rect.height;
+                const parallaxOffset = progress * 30 - 15; // +/-15px диапазон
+                titleElement.style.transform = `translateY(calc(-50% + ${parallaxOffset}px))`;
+            }
+        }
+    }
+
+    // Инициализация
+    if (stages.length > 0) {
+        stages[0].classList.add('stage--active');
+        const firstTitle = stages[0].querySelector('.stage__title')?.textContent;
+        if (firstTitle) titleElement.textContent = firstTitle;
+    }
+
+    // Оптимизированный обработчик скролла
+    let lastScroll = 0;
+    window.addEventListener('scroll', function() {
+        const now = Date.now();
+        if (now - lastScroll > 50) { // Ограничение 20 FPS
+            updateActiveStage();
+            lastScroll = now;
+        }
+    }, {passive: true});
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('feedbackForm');
+
+    if (!form) return;
+
+    // Маска для телефона
+    const phoneInput = form.querySelector('input[type="tel"]');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', function(e) {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+    }
+
+    // Валидация формы
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+
+        requiredFields.forEach(field => {
+            const errorElement = field.closest('.form-group').querySelector('.form-error');
+
+            if (!field.value.trim() || (field.type === 'checkbox' && !field.checked)) {
+                errorElement.textContent = 'Это поле обязательно для заполнения';
+                field.classList.add('invalid');
+                isValid = false;
+            } else {
+                errorElement.textContent = '';
+                field.classList.remove('invalid');
+            }
+        });
+
+        // Валидация email (если добавите поле email)
+        const emailField = form.querySelector('input[type="email"]');
+        if (emailField && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
+            const errorElement = emailField.closest('.form-group').querySelector('.form-error');
+            errorElement.textContent = 'Введите корректный email';
+            emailField.classList.add('invalid');
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Эмуляция отправки формы
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span>Отправка...</span>';
+
+            // Здесь должна быть реальная отправка (AJAX, Fetch API)
+            setTimeout(() => {
+                form.innerHTML = `
+          <div class="form-success">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3>Спасибо за заявку!</h3>
+            <p>Мы свяжемся с вами в ближайшее время</p>
+          </div>
+        `;
+            }, 1500);
+        }
+    });
+
+    // Анимация при фокусе
+    const inputs = form.querySelectorAll('.form-input, .form-textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.closest('.form-group').querySelector('.form-label').classList.add('focused');
+        });
+
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                this.closest('.form-group').querySelector('.form-label').classList.remove('focused');
+            }
+        });
+    });
+});
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Gallery image lightbox functionality
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+
+    galleryImages.forEach(image => {
+        image.addEventListener('click', function() {
+            // Implement your lightbox functionality here
+            console.log('Opening lightbox for:', this.src);
+        });
+    });
+
+    // Animate stats on scroll
+    const animateStats = () => {
+        const stats = document.querySelectorAll('.stat-number');
+
+        stats.forEach(stat => {
+            const rect = stat.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
+
+            if (isVisible && !stat.dataset.animated) {
+                stat.dataset.animated = 'true';
+                // Add animation class or trigger counting animation
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateStats);
+    animateStats(); // Run once on load
+});
+
+
+// Contact Form Handling
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get form values
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+
+        // Simple validation
+        if (!data.name || !data.email || !data.message) {
+            alert('Please fill in all required fields');
+            return;
+        }
+
+        // Here you would typically send the data to your server
+        console.log('Form submitted:', data);
+
+        // Show success message
+        alert('Thank you for your message! We will get back to you soon.');
+        contactForm.reset();
+
+        // In a real implementation, you would use fetch() to send the data
+        /*
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Thank you for your message!');
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('There was an error submitting your form');
+        });
+        */
+    });
+}
+
+// FAQ Accordion Functionality
+const faqItems = document.querySelectorAll('.faq-item h3');
+if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const content = item.nextElementSibling;
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Initialize - hide all answers except first
+        if (item !== faqItems[0]) {
+            item.nextElementSibling.style.display = 'none';
+        }
+    });
+}
