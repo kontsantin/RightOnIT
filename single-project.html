@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <title>Wiseswans</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__fixed">
+        <div class="container">
+            <div class="header__row">
+                <a href="/" class="header__logo-link">
+                    <img src="./assets/images/swanlogo6.png" alt="" class="header__logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="/index.html" class="header__nav-item-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="./archive.html" class="header__nav-item-link">Services</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">Our Work</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="./about.html" class="header__nav-item-link">About Us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="./contacts.html" class="header__nav-item-link">Contact Us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">More Info</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="header__actions-btn btn">
+                        click me
+                    </button>
+                    <div class="header__search">
+
+                    </div>
+                    <div class="header__burger-menu">
+                        <span class="header__burger-line header__burger-line--first"></span>
+                        <span class="header__burger-line header__burger-line--second"></span>
+                        <span class="header__burger-line header__burger-line--third"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="single-project">
+        <section class="single-page-top archive-top">
+            <div class="container">
+                <div class="single-page-header">
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="/portfolio" class="breadcrumbs__link">Portfolio</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Vector Moving Company</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="project-title">Vector Moving Company Web Design</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Transforming a local moving company's online presence</h2>
+                        <p>A complete redesign focused on usability, conversions, and modern aesthetics</p>
+                        
+                        <!-- Добавляем миниатюры-слайдер -->
+                        <div class="hero-thumbnails">
+                            <div class="thumbnails-slider">
+                                <div class="thumbnail active" data-image="./assets/images/vector-desc.png">
+                                    <img src="./assets/images/vector-desc.png" alt="Homepage">
+                                </div>
+                                <div class="thumbnail" data-image="./assets/images/vector-tab-1024x680.png">
+                                    <img src="./assets/images/vector-tab-1024x680.png" alt="Quote Form">
+                                </div>  
+                                <div class="thumbnail" data-image="./assets/images/vector0smart-1024x682.png">
+                                    <img src="./assets/images/vector0smart-1024x682.png" alt="Quote Form">
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/images/vector-desc.png" alt="Vector Moving Company Website Preview" class="hero-img" id="mainHeroImage">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h3>Client</h3>
+                        <div class="overview-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                          </svg>
+                        </div>
+                        <p>Vector Moving Company - San Diego</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Services</h3>
+                        <div class="overview-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                          </svg>
+                          </div>
+                        <p>Web Design, UX/UI, Frontend Development</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Timeline</h3>
+                        <div class="overview-icon">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                            <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                          </svg></div>
+                      
+                        <p>6 weeks</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Technologies</h3>
+                        <div class="overview-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                          </svg>
+                          </div>
+                        <p>HTML5, CSS3, JavaScript, WordPress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <div class="project-details__content">
+                    <h2 class="project-details__title section-title">Project Details</h2>
+        
+                    <div class="project-details__block">
+                        <h3 class="project-details__subtitle">The Challenge</h3>
+                        <p class="project-details__text">Vector Moving Company approached us with an outdated HTML website that was poorly converting visitors into customers. The existing site had several pain points:</p>
+                        <ul class="project-details__list">
+                            <li class="project-details__item">Dated design that didn't reflect their professional services</li>
+                            <li class="project-details__item">No mobile responsiveness</li>
+                            <li class="project-details__item">Complex navigation structure</li>
+                            <li class="project-details__item">No online booking or quote system</li>
+                            <li class="project-details__item">Slow loading times</li>
+                        </ul>
+                    </div>
+        
+                    <div class="project-details__block">
+                        <h3 class="project-details__subtitle">Our Solution</h3>
+                        <p class="project-details__text">We completely reimagined their digital presence with a modern, conversion-focused design:</p>
+        
+                        <div class="solution-features">
+                            <div class="solution-features__item">
+                                <h4 class="solution-features__title">Custom Video Header</h4>
+                                <p class="solution-features__text">Created an engaging full-screen video background showing their team in action to immediately connect with visitors.</p>
+                            </div>
+                            <div class="solution-features__item">
+                                <h4 class="solution-features__title">Interactive Quote Calculator</h4>
+                                <p class="solution-features__text">Developed a dynamic form that provides instant moving estimates based on home size and services needed.</p>
+                            </div>
+                            <div class="solution-features__item">
+                                <h4 class="solution-features__title">Service Showcase</h4>
+                                <p class="solution-features__text">Redesigned their service pages with clear icons, before/after sliders, and customer testimonials.</p>
+                            </div>
+                            <div class="solution-features__item">
+                                <h4 class="solution-features__title">Mobile-First Approach</h4>
+                                <p class="solution-features__text">Ensured perfect display and functionality across all devices with responsive breakpoints.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="about">
+                        <div class="project-details__block">
+                            <h3 class="project-details__subtitle">The Results</h3>
+                            <div class="results-stats about__column">
+                                <!-- Первый счетчик с прогресс-баром -->
+                                <div class="stat-item">
+                                    <p>
+                                        <span class="counter" data-target="75">0</span>
+                                        <span class="stat-item-percent">%</span>
+                                        Reduction in bounce rate
+                                    </p>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Второй счетчик с прогресс-баром -->
+                                <div class="stat-item">
+                                    <p>
+                                        <span class="counter" data-target="40">0</span>
+                                        <span class="stat-item-percent">%</span>
+                                        Reduction in bounce rate
+                                    </p>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Третий счетчик с прогресс-баром -->
+                                <div class="stat-item">
+                                    <p>
+                                        <span class="counter" data-target="320">0</span>
+                                        <span class="stat-item-percent">%</span>
+                                        More mobile conversions
+                                    </p>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <h2 class="section-title">Design Showcase</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Homepage Design">
+                        <p>Homepage with video background</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Quote Form">
+                        <p>Interactive quote calculator</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Mobile View">
+                        <p>Responsive mobile design</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Services Page">
+                        <p>Services overview page</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-testimonial">
+            <div class="container">
+                <blockquote>
+                    <p>"The new website has transformed our business. We're getting more qualified leads, and customers constantly compliment the easy-to-use quote system. The design perfectly represents our brand's professionalism."</p>
+                    <footer>- Michael T., Owner of Vector Moving Company</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="project-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to transform your website?</h2>
+                    <a href="/contact" class="cta-button">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Main Links</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Home</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">About Us</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Our Services</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Services</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Pricing</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Legal</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Terms of Service</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Sitemap</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div class="footer__contact footer__contact--dark-bg">
+                        <h4 class="footer__title" role="heading" aria-level="5">CHAT WITH US</h4>
+                        <a href="tel:213.894.9933" class="footer__link footer__link--white">
+                            <span>213.894.9933</span>
+                        </a><br>
+                        <a href="mailto:hello@spinxdigital.com" class="footer__link footer__link--white">
+                            <span>hello@spinxdigital.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__location">
+                        <h4 class="footer__subtitle" role="presentation" aria-level="3">FIND US</h4>
+                        <h4 class="footer__address" role="heading" aria-level="2">
+                            <a href="https://www.google.com/maps/place/911+W+Washington+Blvd,+Los+Angeles,+CA+90015/"
+                               rel="noopener" target="_blank">
+                                911 W. Washington Blvd.<br>Los Angeles, California 90015
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social">
+                        <h4 class="footer__title">Follow us on</h4>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="https://www.linkedin.com/company/spinx-inc./" rel="noopener" target="_blank" class="footer__social-link">LinkedIn</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://x.com/spinxdigital" rel="noopener" target="_blank" class="footer__social-link">X</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.facebook.com/SPINXdigitalagency/" rel="noopener" target="_blank" class="footer__social-link">Facebook</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.youtube.com/@SPINXDigital" rel="noopener" target="_blank" class="footer__social-link">YouTube</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.pinterest.com/spinxagency/" rel="noopener" target="_blank" class="footer__social-link">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="./assets/images/swanlogo6.png" alt="" class="footer__logo">
+            <div class="footer__copyrite">
+                <span>© 2025 RightOnIT Rights Reserved</span>
+                <span class="footer__links">
+                        | <a href="/privacy-policy" class="footer__link">Privacy Policy</a>
+                        | <a href="/contact" class="footer__link">Contact Us</a>
+                    </span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="modal">
+    <div class="modal__content">
+        <button class="modal__close-btn" aria-label="Close Modal">X</button>
+        <h2 class="modal__title">Contact Us</h2>
+        <form action="#" class="modal__form">
+            <label for="name" class="modal__label">Your Name</label>
+            <input type="text" id="name" name="name" class="modal__input" placeholder="Enter your name" required>
+
+            <label for="email" class="modal__label">Your Email</label>
+            <input type="email" id="email" name="email" class="modal__input" placeholder="Enter your email" required>
+
+            <label for="message" class="modal__label">Your Message</label>
+            <textarea id="message" name="message" class="modal__input" placeholder="Your message" required></textarea>
+
+            <button type="submit" class="modal__submit-btn">Send</button>
+        </form>
+    </div>
+</div>
+
+<div class="overlay"></div>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <title>Wiseswans</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__fixed">
+        <div class="container">
+            <div class="header__row">
+                <a href="/" class="header__logo-link">
+                    <img src="./assets/images/swanlogo6.png" alt="" class="header__logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-item-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/archive.html" class="header__nav-item-link">Services</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/single-project.html" class="header__nav-item-link">Our Work</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">About Us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">Contact Us</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">More Info</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="header__actions-btn btn">
+                        click me
+                    </button>
+                    <div class="header__search">
+
+                    </div>
+                    <div class="header__burger-menu">
+                        <span class="header__burger-line header__burger-line--first"></span>
+                        <span class="header__burger-line header__burger-line--second"></span>
+                        <span class="header__burger-line header__burger-line--third"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="archive-top">
+    <div class="container">
+        <div class="archive-header">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">Web design</span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Табы для категорий -->
+            <div class="tabs">               
+                <button class="tabs__button" data-category="category1"><span>Web design</span></button>
+                <button class="tabs__button" data-category="category2"><span>SEO Services</span></button>
+                <button class="tabs__button" data-category="category3"><span>Pay Per Click, SMM, Marketing</span></button>
+            </div>
+        </div>
+
+
+        <!-- Заголовок и описание категории -->
+        <div class="category-heading">
+            <h1 class="category-heading__title">Web design</h1>
+            <div class="category-heading__desc">
+                <h3>Make contact. Invite them in.</h3>
+                <p>Visual design must connect on a human level. It inspires specific positive attitudes, emotions, and above all -- actions. Done right, it is the perfect marriage between art and technology. Our pro visual design team has a full grasp of online user expectations, behaviors, and habits. We are masterful when designing a digital piece that inspires deeper exploration. First impressions count – it is the window that will reveal the personality and quality of your brand.</p>
+                <p>Captivating digital design goes far beyond the ability to use color, space, images, and fonts. It involves understanding the human response to each element. Every piece is strategically crafted to engage and inspire the next action – and the next, and the next. We help you guide your audience exactly where you want them to go – and convert.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="stages" data-section="stages">
+
+        <div class="container">
+            <h2 class="stages__title">Stages develop</h2>
+            <div class="stages__row">
+                <!-- Left Column: Steps List -->
+                <div class="stages__left">
+                    <div class="stage" data-stage="1">
+                        <span class="stage__number">01</span>
+                        <h3 class="stage__title">Preparing Website for SEO</h3>
+                        <p class="stage__desc">At this stage our web specialist prepares to promote the website structure. This includes editing the template design, getting rid of trash in a html-code, setting up file indexing (robots.txt), increase download speed information. This is a basic foundation in seo-promotion but, oddly enough, many companies fail at this stage because of the low quality specialists.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="2">
+                        <span class="stage__number">02</span>
+                        <h3 class="stage__title">Keyword Research</h3>
+                        <p class="stage__desc">Preparation and selection of the right keywords that represent the theme of your website e-commerce store – Success SEO optimization. Of course without the kernel you can display the site in the top 10, but the flow of traffic in this case would still be significantly lower than the web resource, which has correctly formulated the semantic core.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="3">
+                        <span class="stage__number">03</span>
+                        <h3 class="stage__title">Internal Optimization</h3>
+                        <p class="stage__desc">After selecting the right kernel you must pay attention to the content writing using needed keywords. Writing good seo texts – one of the key objectives for high organic ranking, which is successfully used by many webmasters and owners of the resources, because you don’t need any technical knowledge and the network is full of information.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="4">
+                        <span class="stage__number">04</span>
+                        <h3 class="stage__title">Website Interlinking</h3>
+                        <p class="stage__desc">After filling the website with related content, you must do an internal linking between website posts and pages. Interlinking is the process of placing links leading from one article or page to another. When you do it right way search engines easily index the old and new documents. As a result – possibility of reaching better ranking results without significant cost. Many SEO companies delegate this phase to special plug-ins and extensions which often has a negative impact on the overall promotion and won’t give as good effect as if it is done manually.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="5">
+                        <span class="stage__number">05</span>
+                        <h3 class="stage__title">External (off-page) SEOg</h3>
+                        <p class="stage__desc">Another step of SEO is a purchase of third-party links for it. There also are special services and exchanges, where you can find those who is ready to host a link to a third-party site and those who can buy those links. The downside of this phase is it’s high cost and the need in knowledge finding worthy candidates for the reference donation.
+                            Anyways the best way is to do it manually – choosing right “donors” with high-quality content and high ranking.</p>
+                        <div class="stage__border"></div>
+                    </div>
+                    <div class="stage" data-stage="6">
+                        <span class="stage__number">06</span>
+                        <h3 class="stage__title">Ongoing Analysis</h3>
+                        <p class="stage__desc">Permanent – ongoing analysis – must be done after every SEO Step, some of them like internal links, new keywords can be reconsidered at any moment. You can always see what’s going on with help of Google Search Console, Google Analytics and etc. For external links checking and more deep analyse you can also use paid services, for example Ahrefs or MOZ
+                            Design Analytics – layout  AB testing for better user experience, and other features can be also very helpful.</p>
+                        <div class="stage__border"></div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Category Name (Parallax) -->
+                <div class="stages__right">
+                    <div class="stages__category" data-category=""></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2 class="projects__title">Our Projects</h2>
+
+            <a href="#" class="projects__link projects__link-all">More our jobs</a>
+
+        </div>
+        <div class="projects__list">
+            <div class="projects__item">
+                <div class="projects__container">
+                    <div class="projects__box">
+                        <h3 class="projects__item-title">Wellness Center Landing Page Design Sacramento</h3>
+                        <ul class="projects__item-desc">
+                            <li>Info: Landing Page Design for Aspire Wellness Website Sacramento</li>
+                            <li>Responsive front Image with text, custom colors and gradients</li>
+                            <li>Custom Contact Form</li>
+                            <li>Custom Maps</li>
+                            <li><a class="projects__link"
+                                   href="https://www.wiseswans.com/project/wellness-center-landing-page-design-sacramento/"
+                                   target="_blank">Visit Live Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="projects__image-box" style="background-color: #200368;">
+                        <img src="./assets/images/aspire-desc-1-853x853.png" alt="Wellness Center Landing Page"
+                             class="projects__image">
+                    </div>
+                    <div class="projects__meta">
+                        <span class="projects__date">Date: February 12, 2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__item">
+                <div class="projects__container">
+                    <div class="projects__box">
+                        <h3 class="projects__item-title">Vector Moving Company Web Design</h3>
+                        <ul class="projects__item-desc">
+                            <li>Info: Web Design for Local Moving San Diego Company</li>
+                            <li>Complete Re-design of old HTML Website which had very limited functionality</li>
+                            <li>Completely Custom Design & Front page Video</li>
+                            <li>Custom Quote Form and Several other Elements</li>
+                            <li><a class="projects__link"
+                                   href="https://www.wiseswans.com/project/vector-moving-company-web-design/"
+                                   target="_blank">Visit Live Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="projects__image-box" style="background-color: #55555559;">
+                        <img src="./assets/images/aspire-desc-1-853x853.png" alt="Vector Moving Company Web Design"
+                             class="projects__image">
+                    </div>
+                    <div class="projects__meta">
+                        <span class="projects__date">Date: November 5, 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="container feedback__container">
+            <div class="feedback__content-grid">
+                <div class="feedback__content-grid-column">
+
+                    <h2 class="feedback__title">Get in Touch</h2>
+                    <p class="feedback__subtitle">Our managers will promptly answer all your questions and help you find the best solution</p>
+                    <div class="feedback__text">
+                        <p>Submit your request, and we will call you back at a convenient time. Our team of experts will provide consultations on any matters, tailor partnership conditions to your needs, and offer the best options for your business or personal goals.</p>
+                        <p>We value every client and guarantee a professional approach, quick response, and flexible solutions. We work with both individuals and businesses, providing favorable terms and personalized service.</p>
+                    </div>
+                    <p class="feedback__note">*Response time may vary slightly during peak hours, but we always strive for maximum efficiency.</p>
+                </div>
+                <div class="feedback__content-grid-column">
+                    <form class="feedback__form" id="feedbackForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <label for="name" class="form-label">Your Name</label>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-textarea" rows="3"></textarea>
+                            <label for="message" class="form-label">Message (optional)</label>
+                        </div>
+
+                        <button type="submit" class="feedback__submit">
+                            <span>Submit</span>
+                            <svg class="submit-icon" viewBox="0 0 24 24">
+                                <path d="M4 12l16 0m-7-7l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="form-agreement">
+                            <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required checked>
+                            <label for="agreement">I agree with the <a href="/privacy">privacy policy</a></label>
+                        </div>
+                    </form>
+            </div>
+            </div>
+            <div class="feedback__decoration">
+                <div class="decoration-circle"></div>
+                <div class="decoration-dots"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Main Links</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Home</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">About Us</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Our Services</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Services</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Pricing</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer__menu footer-menu">
+                <h4 class="footer-menu__title">Legal</h4>
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Terms of Service</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Sitemap</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div class="footer__contact footer__contact--dark-bg">
+                        <h4 class="footer__title" role="heading" aria-level="5">CHAT WITH US</h4>
+                        <a href="tel:213.894.9933" class="footer__link footer__link--white">
+                            <span>213.894.9933</span>
+                        </a><br>
+                        <a href="mailto:hello@spinxdigital.com" class="footer__link footer__link--white">
+                            <span>hello@spinxdigital.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__location">
+                        <h4 class="footer__subtitle" role="presentation" aria-level="3">FIND US</h4>
+                        <h4 class="footer__address" role="heading" aria-level="2">
+                            <a href="https://www.google.com/maps/place/911+W+Washington+Blvd,+Los+Angeles,+CA+90015/"
+                               rel="noopener" target="_blank">
+                                911 W. Washington Blvd.<br>Los Angeles, California 90015
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social">
+                        <h4 class="footer__title">Follow us on</h4>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="https://www.linkedin.com/company/spinx-inc./" rel="noopener" target="_blank" class="footer__social-link">LinkedIn</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://x.com/spinxdigital" rel="noopener" target="_blank" class="footer__social-link">X</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.facebook.com/SPINXdigitalagency/" rel="noopener" target="_blank" class="footer__social-link">Facebook</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.youtube.com/@SPINXDigital" rel="noopener" target="_blank" class="footer__social-link">YouTube</a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.pinterest.com/spinxagency/" rel="noopener" target="_blank" class="footer__social-link">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="./assets/images/swanlogo6.png" alt="" class="footer__logo">
+            <div class="footer__copyrite">
+                <span>© 2025 RightOnIT Rights Reserved</span>
+                <span class="footer__links">
+                        | <a href="/privacy-policy" class="footer__link">Privacy Policy</a>
+                        | <a href="/contact" class="footer__link">Contact Us</a>
+                    </span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="modal">
+    <div class="modal__content">
+        <button class="modal__close-btn" aria-label="Close Modal"></button>
+        <h2 class="modal__title">Contact Us</h2>
+        <form action="#" class="modal__form">
+            <label for="name" class="modal__label">Your Name</label>
+            <input type="text" id="name" name="name" class="modal__input" placeholder="Enter your name" required>
+
+            <label for="email" class="modal__label">Your Email</label>
+            <input type="email" id="email" name="email" class="modal__input" placeholder="Enter your email" required>
+
+            <label for="message" class="modal__label">Your Message</label>
+            <textarea id="message" name="message" class="modal__input" placeholder="Your message" required></textarea>
+
+            <button type="submit" class="modal__submit-btn">Send</button>
+        </form>
+    </div>
+</div>
+
+<div class="overlay"></div>
+</body>
+
+</html>
