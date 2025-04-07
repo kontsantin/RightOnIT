@@ -2394,7 +2394,11 @@ footer {
 // Project Gallery
 .project-gallery {
     padding: 4rem 0;
-
+    h2 {
+        background:  $text-gradient-tropical;
+        @include title-style-h2;
+        text-align: center;
+    }
     .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -2402,11 +2406,19 @@ footer {
 
         .gallery-item {
             text-align: center;
-
+            cursor: pointer;
+            p {
+                font-size: $font-size-body;
+            }
             img {
                 border-radius: 8px;
                 margin-bottom: 1rem;
                 transition: transform 0.3s ease;
+                object-fit: cover;
+                max-width: 300px;
+                width: 100%;
+                height: 190px;
+
 
                 &:hover {
                     transform: translateY(-5px);
@@ -2455,7 +2467,7 @@ footer {
     &__item {
         margin-bottom: 10px;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: $font-size-body;
         position: relative;
         padding-left: 30px;
         cursor: pointer;
@@ -2514,6 +2526,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
+.stat-item-counter {
+    position: relative;
+
+    &::after {
+        content: '%';
+        display: inline;
+    }
+}
    &.about__column {
         justify-content: space-between;
         width: 100%;
@@ -2542,21 +2562,53 @@ footer {
 .project-cta {
     padding: 4rem 0;
     text-align: center;
-
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 800px;
+        width: 100%;
+        transform: translate(40%, 0%);
+        max-height: 800px;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 51, 164, 0.49) 10%, rgba(0, 16, 115, 0.4) 70%);
+        border-radius: 50%;
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
+        filter: blur(50px);
+        z-index: -1;
+    }
     .cta-button {
-        display: inline-block;
+        display: flex;
+        gap: 5px;
+        margin: 0 auto;
+        align-items: center;
+        width: fit-content;
         padding: 1rem 2rem;
         border-radius: 50px;
-        background: inherit; // Use your primary color
-        color: inherit; // Use your text color
+        background: #16171a40;
+        color: inherit;
         font-weight: bold;
         text-decoration: none;
         transition: all 0.3s ease;
-        margin-top: 1.5rem;
 
+
+        &::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            right: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../images/reshot-icon-arrow-diagonal-up-right-Y2ND6FM3RW.svg);
+        }
         &:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: $body-bg-color;
         }
     }
 }
@@ -2695,6 +2747,11 @@ footer {
         h3 {
             margin-bottom: 1rem;
         }
+    }
+}
+.project-testimonial {
+    p {
+        font-size: $h3-font-size;
     }
 }
 
@@ -2838,3 +2895,5 @@ footer {
         }
     }
 }
+
+
