@@ -2615,60 +2615,24 @@ footer {
 
 
 /* About Page Styles */
-.about-intro {
-    padding: 4rem 0;
-
-    .intro-content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 3rem;
+.about-page {
+    &__title {
+        background: $text-gradient-metallic;
+        @include title-style-h2;
+        text-align: center;
     }
-
-    .intro-text {
-        flex: 1 1 60%;
-
-        h2 {
-            margin-bottom: 1.5rem;
-        }
-    }
-
-    .intro-stats {
-        flex: 1 1 30%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        .stat-item {
-            text-align: center;
-            padding: 1.5rem;
-            border-radius: 8px;
-            background: inherit; // Use your existing card bg
-
-            &-number {
-                display: block;
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-bottom: 0.5rem;
-            }
-        }
-    }
-
-    @media (max-width: 768px) {
-        .intro-content {
-            flex-direction: column;
-        }
-
-        .intro-text,
-        .intro-stats {
-            flex: 1 1 100%;
-        }
+    .archive-top::before {
+        background: radial-gradient(circle, rgb(91 7 103 / 64%) 10%, rgb(49 36 36 / 76%) 70%);
+        border-radius: 50%;
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
     }
 }
 
 .about-story {
-    padding: 4rem 0;
-
+    &__title {
+        background: $text-gradient-tropical;
+        @include title-style-h2;
+    }
     .story-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
